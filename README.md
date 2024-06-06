@@ -5,7 +5,7 @@ An accurate prediction of house prices is important for buyers, sellers, and inv
 
 <div style="text-align: justify">
 
-The data pertains to the houses found in a given California district and some summary stats about them based on the ![1990 California census data](https://www.kaggle.com/datasets/camnugent/california-housing-prices) downloaded from Kaggle. The data is not clean so some preprocessing steps are required. The column names are as follows:
+The data pertains to the houses found in a given California district and some summary stats about them based on the [1990 California census data](https://www.kaggle.com/datasets/camnugent/california-housing-prices) downloaded from Kaggle. The data is not clean so some preprocessing steps are required. The column names are as follows:
 
 - Independent Variable
     - longitude
