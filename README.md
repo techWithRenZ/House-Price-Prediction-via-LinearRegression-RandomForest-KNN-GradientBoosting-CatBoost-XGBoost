@@ -37,14 +37,14 @@ The performance of each model was evaluated using the Root Mean Squared Error (R
 
 As shown in the table below, the XGBoost model achieved the lowest RMSE score of 0.21430, indicating it provides the most accurate predictions among the models evaluated. Consequently, XGBoost was chosen as the best-performing model for predicting median house prices in California.
 
-| Model | RMSE    |
-| :---   | :--- |
-| Linear Regression | 0.29933   |
-| Random Forest Regression | 0.22374   |
-| Gradient Boosting Regression | 0.21732   |
-| K-Neighbors Regressor | 0.25952   |
-| CatBoost | 0.21976   |
-| XGBoost | 0.21430   |
+| Model | RMSE    | MSE    |
+| :---   | :--- | :--- |
+| Linear Regression | 0.29933   | 236.09   |
+| Random Forest Regression | 0.22374   | 207.07   |
+| Gradient Boosting Regression | 0.21732   | 203.83   |
+| K-Neighbors Regressor | 0.25952   | 225.07   |
+| CatBoost | 0.21976   | 204.66   |
+| XGBoost | 0.21430   | 201.69   |
 
 ## 4. Hyperparameter Tuning
 Hyperparameter tuning is performed to improve the performance of the regression models. In this project, Randomized Search Cross-Validation is used to find the best combination of hyperparameters of the XGBoost Model.
