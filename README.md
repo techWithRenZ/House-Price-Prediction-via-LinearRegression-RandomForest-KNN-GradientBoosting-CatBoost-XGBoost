@@ -1,4 +1,4 @@
-# Regression-Analysis-of-Californian-Housing-Prices-using-Python
+# Regression Analysis of Median House Prices in California Using Python
 
 ## 1. Introduction
 An accurate prediction of house prices is important for buyers, sellers, and investors to make informed decisions. The objective of this analysis is to predict median house price in California using various regression models and compare their performance.
@@ -32,12 +32,25 @@ The following models were used for this analysis:
 - CatBoost Regressor
 - XGBoost Regressor
 
-## 3. Hyperparameter Tuning
+## 3. Model Performance Comparison
 
 
-## 4. Model Performance Comparison
+## 4. Hyperparameter Tuning
+Hyperparameter tuning is performed to improve the performance of the regression models. In this project, Randomized Search Cross-Validation is used to find the best combination of hyperparameters of the XGBoost Model.
 
+The best set of hyperparameters identified through Randomized Search CV is:
+```python
+{'subsample': 0.6,
+ 'reg_lambda': 1,
+ 'reg_alpha': 0,
+ 'n_estimators': 100,
+ 'max_depth': 8,
+ 'learning_rate': 0.1,
+ 'gamma': 0.1,
+ 'colsample_bytree': 1.0}
+```
 
+The XGBoost model was then retrained using these best hyperparameters and the performance of the tuned model was evaluated on the test data by computing the RMSE.
 
 ## 5. Visual Comparison
 
